@@ -29,7 +29,7 @@ jobs:
       - name: docker build javaprog
         run: |
              
-             docker run -t --name linkconta --link harikrk22/mysqlprofile:33 harikrk22/myjavaprg:8
+             docker run --name linkcontainer --link harikrk22/mysqlprofile:33 harikrk22/myjavaprg:8
             
 
       
