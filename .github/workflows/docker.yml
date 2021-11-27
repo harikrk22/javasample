@@ -28,8 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: docker build javaprog
         run: |
-             docker run -t harikrk22/myjavaprg:8
-             docker run --name linkconta --link harikrk22/mysqlprofile:33 harikrk22/myjavaprg:8
+             
+             docker run -t --name linkconta --link harikrk22/mysqlprofile:33 harikrk22/myjavaprg:8
             
 
       
