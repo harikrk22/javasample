@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Docker Series Build
 
 # Controls when the workflow will run
 on:
@@ -26,11 +26,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: docker build a one-line script
         run: echo Hello, world!
+             docker build ./DockerAssignment -t harikrk22/myjavaprg:8
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      
