@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: docker build javaprog
-        run: echo Hello, world!
+        run: |
              docker build ./DockerAssignment -t harikrk22/myjavaprg:8
 
       
