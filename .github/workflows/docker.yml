@@ -28,8 +28,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: docker build javaprog
         run: |             
-             docker run --name dbcnt -d -p3306:3306 -e MYSQL_ROOT_PASSWORD=123 mysql:latestdocker build -t dataconnsql .
+             docker run --name dbcnt -d -p3306:3306 -e MYSQL_ROOT_PASSWORD=123 mysql:latest
              docker run --name linkcontainer --link dbcnt harikrk22/myjavaprg:8
+             
+       
+            
+                       
 
             
             
