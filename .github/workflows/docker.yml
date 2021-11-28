@@ -27,9 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: docker build javaprog
-        run: |
-             
-             docker run --name linkcontainer --link harikrk22/mysqlprofile:33 harikrk22/myjavaprg:8
+        run: |             
+             docker build harikrk22/myjavaprg:8
+             docker run harikrk22/myjavaprg:8
+            
             
 
       
