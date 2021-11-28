@@ -29,7 +29,7 @@ jobs:
       - name: docker build javaprog
         run: |             
              docker run --name dbcnt -d -p3306:3306 -e MYSQL_ROOT_PASSWORD=123 mysql:latest
-             docker run --name linkcont --link dbcnt harikr22/myjavaprg:8
+             docker run --name linkcont --link dbcnt harikrk22/myjavaprg:8
              
        
             
